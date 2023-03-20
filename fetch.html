@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fetch Example</title>
+  </head>
+  <body>
+    <h1>Fetch Example</h1>
+    <script>
+      const url = 'https://example.com'; // replace with your URL
+      const headers = new Headers({ 'User-Agent': 'MyCustomUserAgent' });
+      const options = { headers };
+      fetch(url, options)
+        .then(response => response.text())
+        .then(data => {
+          console.log(data);
+          // replace console.log with your desired action
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
